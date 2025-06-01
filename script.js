@@ -53,7 +53,7 @@ buttons.forEach(button =>{
         display.textContent = '';
 
     } else if (!isNaN(key) || ['+', '-', '*', '/', '.'].includes(key)) {
-        const lastChar = userInput.slice(-1); // Define lastChar here
+        const lastChar = userInput.slice(-1); 
         if (['+', '-', '*', '/'].includes(key) && ['+', '-', '*', '/'].includes(lastChar)) {
             return;
         } if (userInput === '' && ['-', '*', '/'].includes(key)) {
